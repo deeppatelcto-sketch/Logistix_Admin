@@ -127,6 +127,7 @@ app.use(
         allowedHeaders: ["Content-Type", "Authorization"],
     })
 );
+app.options("*", cors());
 
 //Updated CORS configuration for your frontend
 // app.use(cors({
